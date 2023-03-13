@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; color: var(--white-clr); }
+.attribution a { color: hsl(228, 45%, 44%); color: violet; }
+
+
+:root {
+    /* Font Family */
+    --kumbh-sans-font-400-700: 'Kumbh Sans', sans-serif;
+    /* Colors */
+    --white-clr: hsl(0, 0%, 100%);
+    /*
+        Primary
+        Text    
+    */
+    --very-dark-desaturated-blue-clr: hsl(238, 29%, 16%);
+    --soft-red-clr: hsl(14, 88%, 65%);
+    /* 
+        Gradient
+        Background gradient 
+    */
+    --soft-violet-clr: hsl(273, 75%, 66%);
+    --soft-blue-clr: hsl(240, 63%, 65%);
+    /* 
+        Neutral 
+        Text
+    */
+    --very-dark-grayish-blue-clr: hsl(237, 12%, 33%);
+    --dark-grayish-blue-clr: hsl(240, 6%, 50%);
+    /* Dividers */
+    --light-grayish-blue-clr: hsl(240, 5%, 91%);
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(var(--soft-violet-clr), var(--soft-blue-clr));
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+@media screen and (min-width: 992px) {
+    
+} 
+
+.container {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 300px;
+}
+
+.title {
+    margin: 0;
+}
+
+.subtitle {
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+
+.header {
+    background-color: rgb(238, 234, 239);
+    padding: 30px 20px;
+}
+
+.header input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 90%;
+}
+
+.header input:focus {
+    outline: none;
+}
+
+.user-list{
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.user-list li{
+    display: flex;
+    padding: 20px;
+
+}
+
+.user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50%;
+    width: 50%;
+}
+
+.user-list .user-info{
+    margin-left: 10px;
+
+}
+
+.user-list .user-info h4{
+    margin-left: 0 0 10px;
+    
+}
+.user-list .user-info p{
+    font-size: 12px;
+    
+}
+
+.user-list li:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+.user-list li.hide {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    background: rgb(238, 238, 238);
+  }
